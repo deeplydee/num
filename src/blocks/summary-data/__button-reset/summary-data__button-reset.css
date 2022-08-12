@@ -1,0 +1,17 @@
+.summary-data__button-reset {
+  padding: 5px;
+
+  color: white;
+  font-size: 16px;
+  font-family: inherit;
+
+  background-color: lightsalmon;
+  border: 0;
+  cursor: pointer;
+
+  transition: opacity .4s;
+}
+
+.summary-data__button-reset:hover {
+  opacity: .7;
+}

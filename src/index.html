@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Num</title>
+  </head>
+  <body class="page">
+    <header class="header">
+      <img class="header__logo" src="<%=require('./images/zero-to-one.svg')%>" alt="Лого Num" />
+    </header>
+
+    <main class="content">
+      <section class="generate">
+        <div class="summary-data">
+          <div class="summary-data__numbers">Numbers</div>
+          <div class="summary-data__consistently">Consistently</div>
+          <button type="button" class="summary-data__button-reset" aria-label="Очистить">
+            Reset
+          </button>
+        </div>
+        <form class="form" name="form-input">
+          <fieldset class="form__input-item">
+            <label for="length" class="form__label">Length</label>
+            <input type="text" class="form__input" id="length" value="4" />
+          </fieldset>
+          <fieldset class="form__input-item">
+            <label for="min" class="form__label">Min</label>
+            <input type="text" class="form__input" id="min" value="1" />
+          </fieldset>
+          <fieldset class="form__input-item">
+            <label for="max" class="form__label">Max</label>
+            <input type="text" class="form__input" id="max" value="20" />
+          </fieldset>
+          <button type="submit" class="form__button" aria-label="Результат">Generate</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">© 2022 Num</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+.form__input {
+  max-width: 80px;
+
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #bcbcc4;
+  outline: none;
+}
+
+.form__input:focus {
+  background-color: rgb(247, 247, 247);
+  outline-color: rgb(87, 87, 87);
+}
