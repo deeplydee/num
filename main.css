@@ -2,20 +2,27 @@
 @font-face{font-family:Inter;font-weight:400;src:url(c8ba52b05a9ef10f4758.woff2) format("woff2"),url(8c206db99195777c6769.woff) format("woff")}@font-face{font-family:Inter;font-weight:500;src:url(293fd13dbca5a3e450ef.woff2) format("woff2"),url(9053572c46aeb4b16caa.woff) format("woff")}@font-face{font-family:Inter;font-weight:900;src:url(15ca31c0a2a68f76d2d1.woff2) format("woff2"),url(c6938660eec019fefd68.woff) format("woff")}
 .page{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;text-rendering:optimizeLegibility;background-color:#fff;color:#000;display:flex;flex-direction:column;font-family:Inter,Arial,Helvetica,sans-serif;margin:0 auto;max-width:1280px;min-height:100vh}
 .header{border-bottom:1px solid rgba(84,84,84,.7);margin:0 15.625%}@media screen and (max-width:1024px){.header{margin:0}}
-.header__logo{margin:45px 0 35px;max-height:33px;max-width:142px;-o-object-fit:cover;object-fit:cover}@media screen and (max-width:1024px){.header__logo{margin:45px 0 35px 5.9375%}}@media screen and (max-width:768px){.header__logo{margin:28px 0 26px 8.4375%;max-height:24.4px;max-width:103.74px}}
+.header__logo{margin:45px 0 35px;max-height:33px;max-width:142px;-o-object-fit:cover;object-fit:cover}.header__logo:hover{scale:1.1;transition:scale .3s ease}@media screen and (max-width:1024px){.header__logo{margin:45px 0 35px 5.9375%}}@media screen and (max-width:768px){.header__logo{margin:28px 0 26px 8.4375%;max-height:24.4px;max-width:103.74px}}
 .generate{margin:0 15.625%}
 .content{flex:1}
 .form{display:flex;flex-wrap:wrap;justify-content:center;margin-top:15px}
-.form__input-item{align-items:center;background-color:#e6e6fa;border:none;display:flex;flex-direction:column;margin:10px;padding:20px}
+.form__input-item{align-items:center;background-color:#fff0f5;border:none;display:flex;flex-direction:column;margin:10px;padding:20px}.form__input-item:hover{opacity:.7;scale:1.1;transition:scale .3s ease}
+.form__input-item_type_color{background-color:#e6e6fa}
 .form__label{font-size:20px;margin-bottom:25px}
 .form__input{background-color:transparent;border:0;border-bottom:1px solid #bcbcc4;max-width:80px;outline:none}.form__input:focus{background-color:#f7f7f7;outline-color:#575757}
-.form__button{background-color:#646464;border:0;color:#fff;cursor:pointer;font-family:inherit;font-size:20px;margin:30px auto;padding:15px;transition:opacity .4s;width:100%}.form__button:hover{opacity:.7}
+.form__button{background-color:#646464;border:0;color:#fff;cursor:pointer;font-family:inherit;font-size:20px;margin:30px auto;padding:15px;transition:opacity .4s;width:100%}.form__button:hover{opacity:.7;scale:1.05;transition:scale .3s ease}
 .summary-data{align-items:center;display:flex;flex-wrap:wrap;justify-content:space-between}
 .summary-data__numbers{font-size:48px;margin:15px auto;text-align:center;width:100%}
 .summary-data__consistently{margin:5px;text-align:center}
-.summary-data__button-reset{background-color:#ffa07a;border:0;color:#fff;cursor:pointer;font-family:inherit;font-size:16px;padding:5px;transition:opacity .4s}.summary-data__button-reset:hover{opacity:.7}
-.footer{margin:0 15.625%}@media screen and (max-width:1024px){.footer{margin:0 5.9375%}}
+.summary-data__button-reset{background-color:#ffa07a;border:0;color:#fff;cursor:pointer;font-family:inherit;font-size:16px;padding:5px;transition:opacity .4s}.summary-data__button-reset:hover{opacity:.7;scale:1.1;transition:scale .3s ease}
+.previous-result{grid-gap:10px;display:grid;grid-auto-rows:minmax(20px,auto);grid-template-columns:repeat(auto-fit,minmax(150px,1fr));list-style-type:none;margin:0;padding:0}
+.previous-result__item{display:flex;flex-wrap:wrap;justify-content:center;margin-bottom:2px;margin-top:2px}
+.num-item{display:block;margin-left:5px;margin-right:5px}
+.footer{align-items:baseline;display:flex;justify-content:space-between;margin:0 15.625%}@media screen and (max-width:1024px){.footer{margin:0 5.9375%}}
 .footer__copyright{color:#545454;font-size:18px;font-style:normal;font-weight:400;line-height:22px;margin:0;padding:67px 0 60px}@media screen and (max-width:768px){.footer__copyright{font-size:14px;line-height:17px;padding:48px 0 36px}}
+.footer__love{align-items:stretch;display:flex}
+@-webkit-keyframes pulse{0%{transform:scale(1)}to{transform:scale(1.2)}}@keyframes pulse{0%{transform:scale(1)}to{transform:scale(1.2)}}.footer__love-heart{-webkit-animation:pulse .8s ease-in-out infinite alternate;animation:pulse .8s ease-in-out infinite alternate;margin-right:5px}.footer__love-heart:hover{scale:1.2;transition:scale .3s ease}
+.footer__way-of-love{color:#3cb371;margin:0}
 
 
 /*# sourceMappingURL=main.css.map*/
