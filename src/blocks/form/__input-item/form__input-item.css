@@ -5,6 +5,13 @@
   margin: 10px;
   padding: 20px;
 
-  background-color: lavender;
+  background-color: lavenderblush;
   border: none;
+}
+
+.form__input-item:hover {
+  opacity: .7;
+  scale: 1.1;
+
+  transition: scale .3s ease;
 }

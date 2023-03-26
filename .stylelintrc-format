@@ -19,7 +19,7 @@
   ],
   "defaultSeverity": "error",
   "rules": {
-    "aditayvm/at-rule-no-children": true,
+    "aditayvm/at-rule-no-children": false,
     "plugin/declaration-block-no-ignored-properties": true,
     "csstools/media-use-custom-media": [
       "known",

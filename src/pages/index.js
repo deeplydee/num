@@ -5,7 +5,10 @@ import {
   buttonNumResetAction,
   outputDataResult,
   outputDataResultConsistently,
+  arrResult,
 } from '../utils/constants.js';
+
+let arrR = [];
 
 const generateNumRandom = () => {
   const numLength = document.querySelector('#length').value;
@@ -16,23 +19,23 @@ const generateNumRandom = () => {
 
   let result = [];
   let random;
-  let unic;
+  let unique;
   let i;
 
   if (numLength <= numMax - numMin + 1) {
     while (result.length < numLength) {
       do {
-        unic = true;
+        unique = true;
         random = randomInteger(numMin, numMax);
         for (i = 0; i < result.length; i++) {
           // console.log('первая генерация числа', random);
           if (random == result[i]) {
             // такое число уже было
-            unic = false;
+            unique = false;
             break;
           }
         }
-      } while (!unic); // повторить генерацию числа
+      } while (!unique); // повторить генерацию числа
       // console.log('повторная генерацию числа', random);
       result.push(random);
     }
@@ -45,12 +48,27 @@ const generateNumRandom = () => {
   console.log('result', result);
   outputDataResult.textContent = result.join(' ');
 
+  let resultDiv = document.createElement('div');
+  resultDiv.className = 'previous-result__item';
+  for (let j = 0; j < result.length; j++) {
+    let resultSpan = document.createElement('span');
+    resultSpan.className = 'num-item';
+    resultSpan.textContent = result[j] + ' ';
+    resultDiv.appendChild(resultSpan);
+  }
+  document.getElementById('results').prepend(resultDiv);
+
   result.sort(function(a, b) {
     return a - b;
   });
 
   outputDataResultConsistently.textContent = result.join(' ');
+
+  console.log('outputDataResult.textContent', outputDataResult.textContent);
+  arrR.push(outputDataResult.textContent);
+
   return result;
+
 };
 
 const resetNumRandom = () => {
@@ -58,6 +76,8 @@ const resetNumRandom = () => {
 
   outputDataResult.textContent = 'Numbers';
   outputDataResultConsistently.textContent = 'Consistently';
+  arrR = [];
+  arrResult.textContent = ' ';
 };
 
 const randomInteger = (min, max) => {

@@ -16,4 +16,7 @@
 
 .form__button:hover {
   opacity: .7;
+  scale: 1.05;
+
+  transition: scale .3s ease;
 }

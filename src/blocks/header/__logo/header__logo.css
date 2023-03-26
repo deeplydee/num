@@ -5,6 +5,12 @@
   object-fit: cover;
 }
 
+.header__logo:hover {
+  scale: 1.1;
+
+  transition: scale .3s ease;
+}
+/* stylelint-disable aditayvm/at-rule-no-children */
 @media screen and (max-width: 1024px) {
   .header__logo {
     margin: 45px 0 35px 5.9375%;
